@@ -1,0 +1,23 @@
+{
+  "name": "video-tutorials",
+  "version": "1.0.0",
+  "description": "Video Tutorials",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src migrations",
+    "start-dev-server": "nodemon src/bin/start-server.js --color",
+    "test": "NODE_ENV=test tape 'src/**/*.test.js'",
+    "test:watch": "nodemon --color --exec \"node script/clear-console.js && npm test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kruko-io/video-tutorials.git"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pug": "^3.0.2",
+    "uuid": "^8.3.2"
+  }
+}
